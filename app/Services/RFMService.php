@@ -80,7 +80,7 @@ class RFMService
         for($i = 0; $i < 5; $i++)
         {
         array_push($eachCount, [
-        'rank' => $rank, 'r' => $rCount[$i] ?? 0, 'f' => $fCount[$i] ?? 0, 'm' => $mCount[$i] ?? 0, ]);
+        'rank' => $rank, 'r' => $rCount[$i], 'f' => $fCount[$i], 'm' => $mCount[$i], ]);
         $rank--; // rankを1ずつ減らす
         }
         // dd($totals, $eachCount, $rCount, $fCount, $mCount);
